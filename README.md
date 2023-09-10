@@ -2,6 +2,8 @@ var.env содержит переменную, отвечающую за вре�
 
 Сборка и запуск контейнеров осуществляется командой docker compose up -d --build
 
+Порт задается внутри docker-compose.yaml
+
 Команда для скачивания образа с docker hub: docker pull mottle/buildapi:latest
 
 Пример запроса: http://localhost:9999/cities?city=Barnaul&city=Biysk&city=Moscow&parameters=temperature&parameters=humidity&parameters=feels
