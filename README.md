@@ -1,6 +1,7 @@
 var.env содержит переменную, отвечающую за время жизни кэша в памяти
 
-Образ собирается внутри файла docker compose
+Сборка и запуск контейнера осуществляется внутри файла docker compose
+
 Сборка запускается командой docker compose up -d --build
 
 Команда для скачивания образа с docker hub: docker pull mottle/buildapi:latest
