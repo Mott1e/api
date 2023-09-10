@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  redis:
+    image: redis:7.2-alpine
+    container_name: radis_app
+    command: --port 6379
+    expose:
+      - 6379
+
+  app:
+    build:
+      context: .
+    env_file:
+      - var.env
+    container_name: fastapi_app
+    ports:
+      - 9999:8000
+    depends_on:
+      - redis
+
